@@ -11,7 +11,7 @@ namespace SoftMochiPet;
 /// <summary>A user-requested, disposable window used only by the isolated feature-test process.</summary>
 public sealed class FeatureTestTargetWindow : Window
 {
-    public const string WindowTitle = "菲比啾比专用测试窗口";
+    public const string WindowTitle = "Feibi Jiubi专用测试窗口";
     private readonly Process _parent;
     private readonly DispatcherTimer _parentTimer;
 
@@ -38,7 +38,7 @@ public sealed class FeatureTestTargetWindow : Window
         root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
         var heading = new TextBlock
         {
-            Text = "给菲比啾比的小玩具",
+            Text = "给Feibi Jiubi的小玩具",
             FontSize = 24,
             FontWeight = FontWeights.SemiBold,
             Foreground = new SolidColorBrush(Color.FromRgb(55, 43, 98)),

@@ -28,7 +28,7 @@ public static class FeatureDemoPlan
         new FeatureDemoStep(FeatureDemoAction.Punch, "一拳打飞测试窗口", 20),
         new FeatureDemoStep(FeatureDemoAction.Charge, "冲过去撞一撞", 20),
         new FeatureDemoStep(FeatureDemoAction.HatStoreReturn, "藏好窗口，等待右键归还", 40),
-        new FeatureDemoStep(FeatureDemoAction.Tease, "逗逗她，捣蛋条涨起来", 10),
+        new FeatureDemoStep(FeatureDemoAction.Tease, "Tease her，Mischief条涨起来", 10),
         new FeatureDemoStep(FeatureDemoAction.Shatter, "踢碎并收进帽子，等待右键恢复", 60),
         new FeatureDemoStep(FeatureDemoAction.Tear, "撕开并收进帽子，等待右键恢复", 60),
         new FeatureDemoStep(FeatureDemoAction.HatlessInterruption, "无帽中断并捡帽，等待右键恢复", 60),
@@ -38,19 +38,19 @@ public static class FeatureDemoPlan
     {
         new FeatureDemoManualCheck("PrankAppearance", "观察撕片边缘完整、碎片收进帽口、右键出帽后聚合归位"),
         new FeatureDemoManualCheck("PrankTakeover", "收纳后桌面无残留碎片，窗口持续收起，右键恢复；用户接管时停止控制"),
-        new FeatureDemoManualCheck("PrankVoice", "专属语音、禁音即停与连续动作不叠音"),
+        new FeatureDemoManualCheck("PrankVoice", "专属语音、Mute即停与连续动作不叠音"),
     });
 
     public static string FailureHint(string reason) => reason switch
     {
-        "foreground_window" => "测试窗口正在前台：点桌面空白，再右键重试本项",
-        "occluded" or "window_occluded" => "测试窗口被遮挡：移开遮挡后右键重试本项",
+        "foreground_window" => "测试窗口正在前台：点桌面空白，再右键Retry this step",
+        "occluded" or "window_occluded" => "测试窗口被遮挡：移开遮挡后右键Retry this step",
         "elevated_process" => "请退出以管理员身份运行的桌宠，使用普通启动",
-        "test_window_closed" => "测试窗口已关闭，右键重试本项会重新创建",
-        "step_timeout" => "此项未按时完成，请查看报告后重试本项",
+        "test_window_closed" => "测试窗口Disabled，右键Retry this step会重新创建",
+        "step_timeout" => "此项未按时完成，请查看报告后Retry this step",
         "unexpected_restore_before_manual_request" => "未收到右键请求就结束了窗口持有，请查看报告后重试",
         "manual_restore_identity_mismatch" => "恢复请求与当前测试窗口不符，请查看报告后重试",
-        _ => $"此项已暂停（{reason}），可右键重试本项",
+        _ => $"此项已暂停（{reason}），可右键Retry this step",
     };
 
     public static string ManualRestoreHint(double elapsedSeconds)

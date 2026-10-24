@@ -24,21 +24,21 @@ public sealed class MischiefDialogueSelector
     private static readonly IReadOnlyDictionary<MischiefCue, IReadOnlyList<string>> Lines =
         new Dictionary<MischiefCue, IReadOnlyList<string>>
         {
-            [MischiefCue.Teased] = ["嘿嘿，再来！", "痒痒！", "又逗我！", "啾！抓住你！"],
-            [MischiefCue.Sneak] = ["嘘——", "没看见我哦。", "悄悄来。", "嘿嘿，等着！"],
-            [MischiefCue.Kick] = ["看脚！", "嘿呀！", "走你咯！", "踢一下下！"],
-            [MischiefCue.Punch] = ["咚！", "小拳拳！", "嘿！", "接招啦！"],
-            [MischiefCue.Charge] = ["让一让嘛！", "冲呀——！", "我来咯！", "帽子抓稳！"],
-            [MischiefCue.Recoil] = ["哎哟哟。", "屁股墩！", "装没看见嘛。", "我站稳啦！"],
-            [MischiefCue.HideWindow] = ["借我藏一下！", "帽子装得下！", "嘿嘿，归我啦。", "不许偷看哦！"],
-            [MischiefCue.HoldingWindow] = ["没有藏呀。", "帽子乖一点！", "嗯？什么窗？", "嘿嘿……"],
-            [MischiefCue.ReturnWindow] = ["还你啦！", "当当——！", "在这儿呢！", "好啦，不藏啦。"],
-            [MischiefCue.Burst] = ["忍不住啦！", "帽子先歇着！", "我要来真的咯！", "嘿嘿，看好啦！"],
-            [MischiefCue.Smash] = ["飞咯——！", "啾！大脚脚！", "哇，散开啦！", "我好厉害呀！"],
-            [MischiefCue.Tear] = ["嘿——咻！", "怎么这么韧呀！", "再拉一点点！", "哎，粘手啦！"],
-            [MischiefCue.Finished] = ["好玩！", "帽子回来啦！", "嘿嘿，没事呀。", "我很乖的！"],
-            [MischiefCue.Interrupted] = ["被逮到啦！", "好嘛好嘛。", "我松手啦。", "下次再玩嘛。"],
-            [MischiefCue.NoTarget] = ["玩具躲哪啦？", "等会儿再玩！", "先蹦两下！", "那我歇一下。"],
+            [MischiefCue.Teased] = ["Hehe, again!", "That tickles!", "Teasing me again!", "Got you!"],
+            [MischiefCue.Sneak] = ["Shh—", "You didn't see me.", "Sneaking in.", "Hehe, wait for it!"],
+            [MischiefCue.Kick] = ["Watch my feet!", "Take that!", "Off you go!", "Just a little kick!"],
+            [MischiefCue.Punch] = ["Bonk!", "Tiny punch!", "Hey!", "Catch this!"],
+            [MischiefCue.Charge] = ["Make room!", "Here I go—!", "Coming through!", "Hold onto the hat!"],
+            [MischiefCue.Recoil] = ["Ouchie.", "Bottom-first landing!", "Pretend you saw nothing.", "I'm steady now!"],
+            [MischiefCue.HideWindow] = ["Let me hide this!", "The hat can hold it!", "Hehe, it's mine now.", "No peeking!"],
+            [MischiefCue.HoldingWindow] = ["I'm not hiding anything.", "Behave, hat!", "Huh? What window?", "Hehe…"],
+            [MischiefCue.ReturnWindow] = ["Here you go!", "Ta-da—!", "It's right here!", "All done hiding."],
+            [MischiefCue.Burst] = ["I can't resist!", "Hat, take a break!", "Now I'm serious!", "Hehe, watch this!"],
+            [MischiefCue.Smash] = ["Fly away—!", "Big kick!", "Wow, it broke apart!", "I'm amazing!"],
+            [MischiefCue.Tear] = ["Heave—ho!", "Why is it so tough?", "Just a little farther!", "Oops, it's sticky!"],
+            [MischiefCue.Finished] = ["That was fun!", "The hat is back!", "Hehe, no problem.", "I was good!"],
+            [MischiefCue.Interrupted] = ["Caught me!", "Okay, okay.", "I'm letting go.", "Next time!"],
+            [MischiefCue.NoTarget] = ["Where did the toy go?", "Maybe later!", "I'll bounce around first.", "Then I'll rest."],
         };
 
     private readonly Random _random;

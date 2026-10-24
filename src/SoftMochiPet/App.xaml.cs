@@ -65,8 +65,8 @@ public partial class App : System.Windows.Application
             if (behaviorControl || behaviorIsRunning)
             {
                 System.Windows.MessageBox.Show(
-                    "桌宠或行为控制版已经在运行。\n\n请先从托盘退出当前桌宠，再打开需要的版本。",
-                    "啾糯桌宠 · 行为控制版",
+                    "The pet or behavior-control build is already running.\n\nExit the current pet from the tray before opening the requested version.",
+                    "JiuNuo Desktop Pet · Behavior Control",
                     MessageBoxButton.OK,
                     MessageBoxImage.Information);
                 DiagnosticsLog.WriteEvent("BehaviorControlStartBlockedByExistingInstance");
@@ -75,8 +75,8 @@ public partial class App : System.Windows.Application
             if (featureTest)
             {
                 System.Windows.MessageBox.Show(
-                    "桌宠或专属功能测试已经在运行。\n\n请先从托盘退出当前桌宠，再打开“菲比啾比专属功能测试”。",
-                    "啾糯桌宠 · 菲比啾比专属功能测试",
+                    "The pet or feature-test build is already running.\n\nExit the current pet from the tray before opening Feibi Jiubi Feature Test.",
+                    "JiuNuo Desktop Pet · Feibi Jiubi Feature Test",
                     MessageBoxButton.OK,
                     MessageBoxImage.Information);
                 DiagnosticsLog.WriteEvent("FeatureTestStartBlockedByExistingInstance");

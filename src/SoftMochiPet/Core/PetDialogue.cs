@@ -89,7 +89,7 @@ public static class PetDialogueCatalog
             ],
             [DialogueCue.ManualIconLick] =
             [
-                "好饿……",
+                "Hungry……",
                 "先舔一口。",
                 "就一小口。",
                 "这个能吃吗？",
@@ -117,7 +117,7 @@ public static class PetDialogueCatalog
             ],
             [DialogueCue.VeryHungry] =
             [
-                "好饿……",
+                "Hungry……",
                 "饿扁了。",
                 "想吃东西。",
                 "肚子空啦。",
@@ -159,7 +159,7 @@ public static class PetDialogueCatalog
             ],
             [DialogueCue.HungryRoll] =
             [
-                "好饿好饿。",
+                "HungryHungry。",
                 "给我吃的。",
                 "我滚一下。",
                 "饿扁啦。",
@@ -180,7 +180,7 @@ public static class PetDialogueCatalog
             ],
             [DialogueCue.Sleep] =
             [
-                "我要睡觉啦。",
+                "Go to sleep。",
                 "困困。",
                 "先睡一会儿。",
                 "晚安。",
@@ -292,7 +292,7 @@ public static class PetDialogueCatalog
             ],
             [DialogueCue.HungryRequestQueued] =
             [
-                "好饿……等一下。",
+                "Hungry……等一下。",
                 "站稳就吃。",
                 "马上去舔。",
                 "肚子等不及啦。",

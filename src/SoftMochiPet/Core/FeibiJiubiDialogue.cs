@@ -28,7 +28,7 @@ internal static class FeibiJiubiDialogue
             [DialogueCue.VoiceDisabled] = ["嘘，悄悄的。", "蹑手蹑脚走。", "啾……小小声。", "偷偷陪着你。"],
         };
 
-    private static readonly IReadOnlyList<string> PlayLines = ["嘿，玩什么呀？", "陪我蹦一下！", "我有小主意！", "帽子藏好啦。"];
+    private static readonly IReadOnlyList<string> PlayLines = ["嘿，玩什么呀？", "陪我Hop！", "我有小主意！", "帽子藏好啦。"];
 
     public static IReadOnlyList<string> GetLines(DialogueCue cue) =>
         Lines.TryGetValue(cue, out var lines) ? lines : PlayLines;

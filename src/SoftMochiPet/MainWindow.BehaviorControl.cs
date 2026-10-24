@@ -24,7 +24,7 @@ public partial class MainWindow
         {
             _behaviorAutonomyEnabled = enabled;
             ScheduleNextAutonomousDecision(4, 4);
-            SetBehaviorControlStatus(enabled ? "自主日常已开启" : "自主日常已关闭，可直接点选行为");
+            SetBehaviorControlStatus(enabled ? "自主日常已开启" : "自主日常Disabled，可直接点选行为");
         };
         SetBehaviorControlStatus("右键选择行为 · 自主日常默认关闭");
     }
@@ -58,7 +58,7 @@ public partial class MainWindow
         if (_isDragging) return "先松开桌宠";
         if (action == BehaviorControlAction.ReturnWindows)
             return !HasHeldPrank ? "帽子里没有窗口" : _manualRestoreInProgress ? "正在归还窗口" : null;
-        if (_prankPhase != PrankPhase.None || _prankAwaitingSystem) return "先停止当前捣蛋，或等她收好帽子";
+        if (_prankPhase != PrankPhase.None || _prankAwaitingSystem) return "先停止当前Mischief，或等她收好帽子";
         if (_animator.Hatless) return "等她捡回帽子";
         if (_settings.QuietMode && action is not (BehaviorControlAction.Stand or BehaviorControlAction.Sleep or BehaviorControlAction.Wake))
             return "请先关闭安静模式";
@@ -329,7 +329,7 @@ public partial class MainWindow
         if (bitmap is null) { RejectBehavior("图标被遮挡或无法读取，请换一个位置重试"); return false; }
         var target = DisplayGeometry.ClampPointToNearestWorkArea(
             new DrawingPoint(icon.Center.X + icon.PixelSize.Width + 24, icon.Center.Y), 36);
-        var meal = new DeletedItemInfo("behavior-icon-copy.snack", "图标副本", DateTimeOffset.UtcNow, false,
+        var meal = new DeletedItemInfo("behavior-icon-copy.snack", "icon copy", DateTimeOffset.UtcNow, false,
             CachedIcon: bitmap, ScreenX: target.X, ScreenY: target.Y,
             IconPixelWidth: bitmap.PixelWidth, IconPixelHeight: bitmap.PixelHeight,
             QueueId: Interlocked.Increment(ref _nextMealQueueId), AnchorSource: "BehaviorControlIconCopy");

@@ -7,14 +7,14 @@
 #endif
 
 #if defined(BEHAVIOR_CONTROL_LAUNCHER)
-#define LAUNCHER_TITLE L"啾糯桌宠 · 行为控制版"
-#define LAUNCHER_LAYOUT_HELP L"请确认“程序文件”文件夹与这个行为控制版 EXE 放在一起，且文件夹内容完整。"
+#define LAUNCHER_TITLE L"JiuNuo Desktop Pet · Behavior Control"
+#define LAUNCHER_LAYOUT_HELP L"Keep this EXE next to the Program Files folder and make sure the folder is complete."
 #elif defined(FEATURE_TEST_LAUNCHER)
-#define LAUNCHER_TITLE L"啾糯桌宠 · 菲比啾比专属功能测试"
-#define LAUNCHER_LAYOUT_HELP L"请把这个 EXE 留在“测试工具”文件夹中，并保留同一免安装目录下的“程序文件”文件夹。"
+#define LAUNCHER_TITLE L"JiuNuo Desktop Pet · Feibi Jiubi Feature Test"
+#define LAUNCHER_LAYOUT_HELP L"Keep this EXE in the Test Tools folder and retain the Program Files folder in the same portable directory."
 #else
-#define LAUNCHER_TITLE L"啾糯桌宠"
-#define LAUNCHER_LAYOUT_HELP L"请确认“程序文件”文件夹与这个 EXE 放在一起，且文件夹内容完整。"
+#define LAUNCHER_TITLE L"JiuNuo Desktop Pet"
+#define LAUNCHER_LAYOUT_HELP L"Keep this EXE next to the Program Files folder and make sure the folder is complete."
 #endif
 
 static int ShowLaunchError(DWORD errorCode)
